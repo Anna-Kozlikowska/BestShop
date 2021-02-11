@@ -126,62 +126,93 @@
 
         <section class="pricing container">
             <h2>Pricing</h2>
-            <div class="pricing__box pricing__box--basic">
-                <div class="pricing__details">
-                    <p class="pricing__type">Basic</p>
-                    <p class="pricing__price">$0</p>
+            <div class="pricing__boxes">
+                <div class="pricing__box pricing__box--basic">
+                    <div class="pricing__details">
+                        <div class="pricing__type">Basic</div>
+                        <div class="pricing__price">$0</div>
+                    </div>
+                    <ul class="pricing__items">
+                        <li class="pricing__item">100 MB HDD</li>
+                        <li class="pricing__item">1 Subdomain</li>
+                        <li class="pricing__item">2 E-mails</li>
+                        <li class="pricing__item pricing__item--not">Two years licence</li>
+                        <li class="pricing__item pricing__item--not">Full support</li>
+                    </ul>
+                    <a href="#" class="btn">Begin</a>
                 </div>
-                <ul class="pricing__items">
-                    <li class="pricing__item">2 E-mails</li>
-                    <li class="pricing__item pricing__item--not">Two years licence</li>
-                    <li class="pricing__item pricing__item--not">Full support</li>
-                </ul>
-                <a href="#" class="btn">Begin</a>
-            </div>
 
-            <div class="pricing__box pricing__box--professional">
-                <div class="pricing__details">
-                    <p class="pricing__type">Professional</p>
-                    <p class="pricing__price">$25</p>
-                    <p class="pricing__limited">Limited offer</p>
+                <div class="pricing__box pricing__box--professional">
+                    <div class="pricing__details">
+                        <div class="pricing__type">Professional</div>
+                        <div class="pricing__price">$25</div>
+                        <div class="pricing__limited">Limited offer</div>
+                    </div>
+                    <ul class="pricing__items">
+                        <li class="pricing__item">500 MB HDD</li>
+                        <li class="pricing__item">2 Subdomain</li>
+                        <li class="pricing__item">5 E-mails</li>
+                        <li class="pricing__item">One years licence</li>
+                        <li class="pricing__item pricing__item--not">Full support</li>
+                    </ul>
+                    <a href="#" class="btn btn--primary">Begin</a>
                 </div>
-                <ul class="pricing__items">
-                    <li class="pricing__item">500 MB HDD</li>
-                    <li class="pricing__item">2 Subdomain</li>
-                    <li class="pricing__item">5 E-mails</li>
-                    <li class="pricing__item">One years licence</li>
-                    <li class="pricing__item pricing__item--not">Full support</li>
-                </ul>
-                <a href="#" class="btn">Begin</a>
-            </div>
 
-            <div class="pricing__box pricing__box--premium">
-                <div class="pricing__details">
-                    <p class="pricing__type">Premium</p>
-                    <p class="pricing__price">$60</p>
-                    <p class="pricing__limited">Limited offer</p>
+                <div class="pricing__box pricing__box--premium">
+                    <div class="pricing__details">
+                        <div class="pricing__type">Premium</div>
+                        <div class="pricing__price">$60</div>
+                        <div class="pricing__limited">Limited offer</div>
+                    </div>
+                    <ul class="pricing__items">
+                        <li class="pricing__item">2 GB HDD</li>
+                        <li class="pricing__item">5 Subdomain</li>
+                        <li class="pricing__item">20 E-mails</li>
+                        <li class="pricing__item">Two years licence</li>
+                        <li class="pricing__item">Full support</li>
+                    </ul>
+                    <a href="#" class="btn">Begin</a>
                 </div>
-                <ul class="pricing__items">
-                    <li class="pricing__item">2 GB HDD</li>
-                    <li class="pricing__item">5 Subdomain</li>
-                    <li class="pricing__item">20 E-mails</li>
-                    <li class="pricing__item">Two years licence</li>
-                    <li class="pricing__item">Full support</li>
-                </ul>
-                <a href="#" class="btn">Begin</a>
+
             </div>
         </section>
 
         <section class="contact container">
-            <h2>Any questions?</h2>
-            <p>Leave your email address or contact us!</p>
+            <div class="contact__column">
+                <h2 class="contact__title">Any questions?</h2>
+                <p class="contact__instruction">Leave your email address or contact us!</p>
+                <div class="contact__details">
+                    <a href="mailto:info@bestshop.com" class="details__item">
+                        <img src="assets/Mail Icon.svg" alt="mail" />info@bestshop.com</a>
 
+                    <a href="tel:123456789" class="details__item">
+                        <img src="assets/Phone Icon.svg" alt="phone" />123 456 789</a>
+                </div>
+            </div>
+            <div class="contact__column">
+                <form class="form">
+                    <div class="form__field">
+                        <label class="form__label" for="name">Name</label>
+                        <input type="text" class="form__input name" id="name" />
+                    </div>
+                    <div class="form__field">
+                        <label class="form__label" for="email">e-mail</label>
+                        <input type="text" class="form__input email" id="email" />
+                    </div>
 
-            <form class="form">
-
-            </form>
-
-
+                    <div class="form__content">
+                        <label class="form__checkbox">
+                            <input type="checkbox" />
+                            <span class="checkbox"></span>
+                            <p class="content__text">I hereby give consent for my personal data included in my
+                                application to be processed for the purposes of the recruitment
+                                process under the European Parliament’s and Council of the
+                                European Union Regulation on the</p>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Send</button>
+                </form>
+            </div>
         </section>
     </main>
 
